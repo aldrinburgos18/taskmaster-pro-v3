@@ -10,32 +10,20 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.3/themes/blitzer/jquery-ui.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Taskmaster Pro</title>
   </head>
 
   <body>
     <div class="row min-vh-100 no-gutters">
-      <header
-        class="col-12 col-lg-3 bg-dark text-light sticky-top d-flex flex-column p-4 p-lg-3"
-      >
+      <header class="col-12 col-lg-3 bg-dark text-light sticky-top d-flex flex-column p-4 p-lg-3">
         <h1 class="text-center">Taskmaster Pro Edition</h1>
-        <button
-          id="create-task"
-          class="btn btn-block btn-success"
-          data-toggle="modal"
-          data-target="#task-form-modal"
-        >
-          Add Task
-        </button>
-        <button id="remove-tasks" class="btn btn-block btn-danger">
-          Delete All Tasks
-        </button>
+        <button id="create-task" class="btn btn-block btn-success" data-toggle="modal" data-target="#task-form-modal">Add Task</button>
+        <button id="remove-tasks" class="btn btn-block btn-danger">Delete All Tasks</button>
         <p class="mt-auto d-none d-lg-block">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptas
-          architecto ipsa excepturi aut non laudantium sequi fugit officiis
-          optio deleniti asperiores rem eius laborum maxime blanditiis culpa,
-          quis iste?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptas architecto ipsa excepturi aut non laudantium sequi fugit officiis
+          optio deleniti asperiores rem eius laborum maxime blanditiis culpa, quis iste?
         </p>
       </header>
       <main class="col-12 col-lg-9 d-flex flex-column">
@@ -74,32 +62,18 @@
           <!-- done end -->
         </div>
         <div id="trash" class="mt-auto">
-          <div class="w-100 bg-danger p-3 text-center text-light display-4">
-            Drop Here to Remove.
-          </div>
+          <div class="w-100 bg-danger p-3 text-center text-light display-4">Drop Here to Remove.</div>
         </div>
       </main>
     </div>
 
     <!-- Modal -->
-    <div
-      class="modal fade"
-      id="task-form-modal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="task-form-modal"
-      aria-hidden="true"
-    >
+    <div class="modal fade" id="task-form-modal" tabindex="-1" role="dialog" aria-labelledby="task-form-modal" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="task-form-modal">Add New Task</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
@@ -107,32 +81,16 @@
             <form>
               <div class="form-group">
                 <label for="modalTaskDescription">Task description</label>
-                <textarea
-                  id="modalTaskDescription"
-                  rows="3"
-                  class="form-control"
-                ></textarea>
+                <textarea id="modalTaskDescription" rows="3" class="form-control"></textarea>
               </div>
               <div class="form-group">
                 <label for="modalDueDate">Due date</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="modalDueDate"
-                  placeholder="mm/dd/yyyy"
-                  autocomplete="off"
-                />
+                <input type="text" class="form-control" id="modalDueDate" placeholder="mm/dd/yyyy" autocomplete="off" />
               </div>
             </form>
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-dismiss="modal"
-            >
-              Close
-            </button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             <button type="button" class="btn btn-primary">Save Task</button>
           </div>
         </div>
@@ -140,6 +98,13 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.3/jquery-ui.min.js"
+      integrity="sha512-Ww1y9OuQ2kehgVWSD/3nhgfrb424O3802QYP/A5gPXoM4+rRjiKrjHdGxQKrMGQykmsJ/86oGdHszfcVgUr4hA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="./assets/js/script.js"></script>
